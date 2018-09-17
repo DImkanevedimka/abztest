@@ -1,0 +1,62 @@
+@import '../../../../styles/_variables';
+
+
+.services {
+  &__item {
+    display: flex;
+    text-align: center;
+    min-height: 201px;
+    max-width: 140px;
+
+    &:hover {
+      .services__img {
+        background-color: $gray9;
+      }
+
+      .services__title {
+        color: $green3;
+      }
+    }
+
+    &_inner {
+      width: 140px;
+    }
+
+    .col-6 &:not(:nth-child(6n)) {
+      padding-right: calc((100% - 140px*6)/5);
+    }
+
+    .col-5 &:not(:nth-child(5n)) {
+      padding-right: calc((100% - 140px*5)/4);
+    }
+
+    .col-4 &:not(:nth-child(4n)) {
+      padding-right: calc((100% - 140px*4)/3);
+    }
+
+    .col-3 &:not(:nth-child(3n)) {
+      padding-right: calc((100% - 140px*3)/2);
+    }
+  }
+
+  &__img {
+    border: 1px solid $gray3;
+    display: flex;
+    height: 138px;
+
+    img {
+      width: 119px;
+      height: 119px;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    padding-top: 17px;
+    color: $black;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

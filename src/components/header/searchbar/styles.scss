@@ -1,0 +1,41 @@
+@import "../../../styles/_variables";
+
+.searchbar {
+  margin-left: 11px;
+  position: relative;
+  font-size: 15px;
+
+  &__container {
+    color: $white;
+    width: 100%;
+    min-width: 435px;
+    padding-top: 3px;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__input {
+    color: $white;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    border: 0;
+    min-height: 34px;
+    padding-left: 38px;
+    background-color: $green;
+    outline: none;
+    font-family: $Proxima;
+
+    &::placeholder {
+      color:  $white;
+      font-family: $Proxima;
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+}

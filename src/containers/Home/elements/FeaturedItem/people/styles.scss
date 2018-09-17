@@ -1,0 +1,48 @@
+@import "../../../../../styles/_variables.scss";
+
+.people {
+  &__item {
+    justify-content: space-between;
+    margin-bottom: 19px;
+  }
+
+  &__name {
+    margin-bottom: 7px;
+  }
+
+  &__info_box {
+    display: flex;
+  }
+
+  &__img {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+
+  &__info {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+  }
+
+  &__text {
+    color: $gray;
+    font-size: 14px;
+    line-height: 1.25em;
+    margin-bottom: 2px;
+  }
+
+  &__link {
+    color: $black;
+    font-size: 12px;
+    text-decoration: none;
+
+    &:hover {
+      color: $green2;
+      text-decoration: underline;
+    }
+  }
+}

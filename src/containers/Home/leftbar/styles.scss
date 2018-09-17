@@ -1,0 +1,20 @@
+@import "../../../styles/variables";
+
+.left-sidebar {
+  width: 211px;
+  min-width: 211px;
+}
+
+.left-sidebar__footer {
+  color: $gray4;
+  font-family: $Proxima;
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 17px;
+
+  .footer__list {
+    min-width: 0;
+    padding-top: 16px;
+    max-width: 160px;
+  }
+}

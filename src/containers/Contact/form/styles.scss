@@ -1,0 +1,259 @@
+@import "./../../../styles/_variables";
+
+.contacts {
+  &-form {
+    width: 760px;
+    margin: 0 auto;
+    transform: translateY(-100px);
+
+    &__inner {
+      background-color: $white;
+      border: 1px solid $gray3;
+      border-radius: 5px;
+      padding-left: 19px;
+      padding-right: 19px;
+      padding-bottom: 1px;
+      padding-top: 17px;
+    }
+  }
+
+  &__required {
+    color: $gray5;
+    font-family: $Proxima;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  &__row {
+    margin-bottom: 18px;
+
+    &_d-flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &_margin-none {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input_outer {
+    min-width: 345px;
+    position: relative;
+  }
+
+  &__label {
+    color: $black;
+    font-family: $Proxima;
+    font-size: 16px;
+    margin-bottom: 7px;
+    display: block;
+  }
+
+  &__input-file {
+    display: none;
+  }
+
+  &__input-other {
+    margin-top: 20px;
+  }
+
+  &__input-text,
+  &__textarea,
+  &__select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 19px;
+    padding-right: 19px;
+    border: 1px solid $gray6;
+    border-radius: 5px;
+    color: $gray;
+    font-family: $Proxima;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 52px;
+    outline: none;
+
+    .no-valid & {
+      border-color: $red;
+    }
+  }
+
+  &__select {
+    color: $balck2;
+    appearance: none;
+  }
+
+  &__textarea {
+    height: 152px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1em;
+    resize: none;
+  }
+
+  &__button_submit {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    background-color: $green2;
+    border-radius: 5px;
+    border: none;
+    color: $white;
+    font-family: $Proxima;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__description-row {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1px;
+  }
+
+  &-container {
+    width: 100%;
+    max-width: 1280px;
+    min-width: 970px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  &__img {
+    width: 128px;
+    height: 128px;
+    border: 1px solid $gray6;
+    border-radius: 4px;
+    margin-right: 17px;
+    margin-bottom: 17px;
+    min-width: 128px;
+    position: relative;
+
+    &:nth-child(5n) {
+      margin-right: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+  }
+
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2px;
+  }
+}
+
+.upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid $gray2;
+  background: $gray7;
+  cursor: pointer;
+  margin-bottom: 18px;
+
+  &__title {
+    text-align: center;
+    color: $gray;
+    margin-bottom: 5px;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 12px;
+    color: $gray8;
+    line-height: 1.3;
+  }
+
+  &__no-valid {
+    color: $red;
+    font-family: $Proxima;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 3px;
+  }
+}
+
+.about {
+  background: $white;
+  padding-top: 95px;
+  padding-bottom: 108px;
+  border-bottom: 1px solid $gray3;
+  border-top: 1px solid $gray3;
+  margin-top: -1px;
+
+  &__text {
+    color: $gray;
+    font-family: $Proxima;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    columns: 600px 2;
+    column-gap: 80px;
+  }
+
+  &__title {
+    color: $black;
+    font-family: $Proxima;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+}
+
+.no-valid__text {
+  color: $red;
+  font-family: $Proxima;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 0;
+  padding-top: 3px;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  display: none;
+
+  .no-valid & {
+    display: block;
+  }
+}
+
+.delete-img {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  color: $white;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  box-sizing: border-box;
+  background-color: $blue;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $blue2;
+  }
+}

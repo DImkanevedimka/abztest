@@ -1,0 +1,62 @@
+@import '../../styles/variables';
+
+.contact {
+  &-main {
+    background: url("../../img/contact_body_bg.png");
+  }
+
+  &-header {
+    height: 510px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    background: linear-gradient(
+        to right,
+        rgba(28, 37, 52, 0.9) 0%,
+        rgba(28, 37, 52, 0.9) 100%
+      ),
+      url("../../img/contact_header_bg.png");
+    background-size: cover;
+    position: relative;
+
+    &__top {
+      display: flex;
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding-left: 50px;
+      padding-right: 40px;
+      justify-content: space-between;
+      align-items: center;
+
+      .def-button {
+        padding-right: 20px;
+      }
+    }
+  }
+
+  &__info {
+    color: $gray9;
+    font-family: $Proxima;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 115px;
+  }
+
+  &__title {
+    color: $gray9;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 19px;
+  }
+
+  &__text {
+    max-width: 500px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0 auto;
+  }
+}
+

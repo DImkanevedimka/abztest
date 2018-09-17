@@ -1,0 +1,48 @@
+@import "../../../styles/_variables";
+
+.user {
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__notification {
+    display: flex;
+    padding-top: 9px;
+
+    a {
+      margin-left: 11px;
+      margin-right: 9px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    color: $white;
+    margin-left: 22px;
+    margin-top: 3px;
+  }
+
+  &__img {
+    display: block;
+    height: 32px;
+    width: 32px;
+    margin-right: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &bar {
+    &__container {
+      width: 325px;
+      min-width: 325px;
+      margin-left: 19px;
+    }
+  }
+}

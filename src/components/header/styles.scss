@@ -1,0 +1,19 @@
+@import '../../styles/_variables';
+
+.header {
+  background: $green2;
+  border-bottom: 2px solid $green3;
+
+  &-inner {
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2px;
+    box-sizing: border-box;
+  }
+
+  &__logo {
+    margin-right: 20px;
+  }
+}

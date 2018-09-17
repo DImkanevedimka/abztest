@@ -1,0 +1,40 @@
+@import '../../../../styles/_variables';
+
+.menu {
+  &-list {
+    margin-top: 0;
+    font-size: 16px;
+    margin-bottom: 0;
+    padding-top: 1px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray2;
+
+    a {
+      text-decoration: none;
+      transform: translateY(-2px);
+
+      &:hover{
+        color: $green2;
+        text-decoration: underline;
+      }
+      &:active{
+        color: inherit;
+      }
+    }
+  }
+
+  &__icon{
+    display: flex;
+    justify-content: center;
+    width: 22px;
+    margin-right: 27px;
+  }
+}
+
