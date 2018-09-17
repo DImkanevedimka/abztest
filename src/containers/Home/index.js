@@ -99,7 +99,6 @@ class Home extends Component {
           text: response.statusText,
           isError: true,
         };
-        console.log(error);
         this.setState({ error });
       })
       .then((json) => {

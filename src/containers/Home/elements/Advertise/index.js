@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 
-const Advertise = ({ img, className='' }) => (
+const Advertise = ({ img, className = '' }) => (
   <div className="advertise">
     <div className="advertise__title">Advertisement</div>
     <div className={`advertise__img ${className}`}>
