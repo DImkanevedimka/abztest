@@ -22,7 +22,7 @@ class Form extends Component {
 
   componentDidMount() {
     /* global fetch */
-    const url = 'https://cors-anywhere.herokuapp.com/http://504080.com/api/v1/directories/enquiry-types';
+    const url = 'http://504080.com/api/v1/directories/enquiry-types';
     return fetch(url, {
       method: 'GET',
     })
