@@ -76,22 +76,27 @@ class Form extends Component {
   };
 
   onSubmit = (e) => {
+    /* global FormData */
     e.preventDefault();
     const {
       description, email, name, enquiryValue, subjectValue, imagesFiles,
     } = this.state;
-    const data = {
-      description,
-      email: email.value,
-      name: name.value,
-      enquiryValue,
-      subjectValue,
-      imagesFiles,
-    };
-    return fetch('https://504080.com/api/v1/support', {
+    const data = new FormData();
+    data.append('department', 1);
+    data.append('description', description);
+    data.append('email', email.value);
+    data.append('enquiry_type', enquiryValue);
+    data.append('file', imagesFiles);
+    data.append('subject', subjectValue);
+    data.append('user_name', name.value);
+
+    return fetch('http://504080.com/api/v1/support', {
       method: 'POST',
-      data,
-    });
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+      body: data,
+    }).then(response => console.log(response.json()));
   };
 
   checkValid = (e) => {
